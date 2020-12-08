@@ -1,0 +1,31 @@
+.box    {
+    width: 100px;
+    height: 100px;
+    background: yellowgreen;
+    transition: 0.4s;
+}
+.box:active {
+    width: 150px;
+    background: green;
+}
+.box1   {
+    width: 100px;
+    height: 100px;
+    background: blueviolet;
+    transition: 0.4s;
+}
+.box1:hover  {
+    width: 150px;
+    height: 120px;
+}
+input   {
+    width: 100px;
+    outline: none;
+    border: 1px solid rgb(37, 128, 189);
+    padding: 5px 10px;
+    transition: 0.4s;
+}
+input:focus   {
+    border-color: rgb(55, 224, 216);
+    width: 150px;
+}
