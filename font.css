@@ -1,0 +1,28 @@
+.style {
+    font-size: 30px;
+    font-style: italic;
+    line-height: 1.4;
+    font-family: cursive;
+    text-align: left;
+    text-decoration: underline;
+    text-indent: 30px;
+    letter-spacing: 1px;
+}
+
+.weight {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 1.4;
+    font-family: serif;
+    text-align: center;
+    text-decoration: overline;
+    letter-spacing: 3px;
+}
+
+.family {
+    font-size: 30px;
+    line-height: 1.4;
+    font-family: monospace;
+    text-align: right;
+    text-decoration: line-through;
+}
