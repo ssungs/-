@@ -1,0 +1,90 @@
+.box    {
+    width: 100px;
+    height: 100px;
+    background: red;
+    animation: first-animation 3s infinite alternate linear;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box::before    {
+    content: "rainbow";
+    font-size: 20px;
+    color: white;
+    font-weight: 600;
+}
+.box:hover  {
+    animation-play-state: paused;
+}
+.box:hover::before  {
+    content: "stop";
+}
+.box1    {
+    width: 500px;
+    height: 500px;
+    background: red;
+    margin: 50px;
+}
+.box1:active  {
+    animation: second-animation 3s infinite alternate linear;
+}
+@keyframes first-animation  {
+    0%  {
+        width: 100px;
+        background: red;
+    }
+    15% {
+        width: 150px;
+        background: orange;
+    }
+    30% {
+        width: 200px;
+        background: yellow;
+    }
+    45% {
+       width: 250px;
+       background: green; 
+    }
+    60% {
+        width: 300px;
+        background: blue;
+    }
+    75% {
+        width: 350px;
+        background: navy;
+    }
+    100%    {
+        width: 400px;
+        background: purple;
+    }
+}
+@keyframes second-animation  {
+    0%  {
+        transform: translate(0, 0);
+        background: red;
+    }
+    15% {
+        transform: translate(50px, 50px);
+        background: orange;
+    }
+    30% {
+        transform: translate(100px, 0);
+        background: yellow;
+    }
+    45% {
+        transform: translate(150px, 50px);
+       background: green; 
+    }
+    60% {
+        transform: translate(200px, 0);
+        background: blue;
+    }
+    75% {
+        transform: translate(250px, 50px);
+        background: navy;
+    }
+    100%    {
+        transform: translate(300px, 0);
+        background: purple;
+    }
+}
